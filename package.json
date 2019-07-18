@@ -1,0 +1,18 @@
+{
+  "name": "regretsy-proxy",
+  "version": "1.0.0",
+  "description": "Proxy server to combine microservices for an Etsy clone",
+  "author": "Brooke Snellings",
+  "license": "",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "server-dev": "nodemon server"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
