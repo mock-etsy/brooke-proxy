@@ -1,19 +1,17 @@
 const express = require('express');
-const cors = require('cors');
-const { port, host } = require('../config.js');
+const bodyParser = require('body-parser');
+
 const app = express();
 
+//Parse json and x-ww-form-urlencoded
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use('/', express.static('dist'));
-app.use(express.json());
-app.use(cors());
 
-const PORT = port || 5001;
-const HOST = host || '0.0.0.0';
-
-app.get(`api/endpoint`, (req, res) => {
-  res.send('hello world');
+app.get('/api', (req, res) => {
+  console.log('communicating...');
+  res.send('Looks successful');
 });
 
-app.listen(PORT, HOST, () => {
-  console.log(`Brooke's proxy server listening on host ${HOST} port ${PORT}`);
-});
+app.listen(5000, () => console.log('Stitching on port 5000'));
