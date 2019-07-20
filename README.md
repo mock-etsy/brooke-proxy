@@ -15,7 +15,9 @@ Usage
 Some usage instructions:
 
 > npm install
-> start server with following: npm run server-dev
+
+start server with following: 
+> npm run server-dev
 
 Navigate to site by going to localhost:5001 (port/url subject to change upon deployment)
 
