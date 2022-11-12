@@ -27,7 +27,7 @@
     "braces": ">=2.3.1",
     "nodemon": "^1.19.1",
     "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.3.12"
   },
   "babel": {
     "presets": [
